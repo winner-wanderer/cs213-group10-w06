@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#flex_first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#grid_second div {
+  margin-bottom: 1rem;
+  min-height: 100px;
+}
+#grid_second > div.box9.white_rounded {
+  margin-bottom: 0rem;
+}
+
+#grid_second .box9 {
+  display: flex;
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    background-color: red;
+  }
+
+  #flex_second li.form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #flex_second fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #grid_first {
+    display: grid;
+  }
+
+  #grid_first article {
+    margin-bottom: 1rem;
+  }
+
+  #grid_first > article:nth-child(8) {
+    margin-bottom: 0rem;
+  }
+  #grid_second {
+    display: grid;
+  }
+
+  #grid_second .box9 {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: blue;
+  }
+}
