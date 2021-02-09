@@ -65,6 +65,35 @@ body {
 
 @media only screen and (min-width: 1200px) {
   body {
-    background-color: blue;
+    background-color: white;
+  }
+
+  #flex_second .form-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #flex_second fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #grid_first {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem;
+  }
+
+  #grid_second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+  }
+
+  .box1 {
+    grid-column: 1 / 4;
+    height: 200px;
   }
 }
+
